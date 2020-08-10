@@ -61,40 +61,22 @@
         </div>
     </header>
 
-    <div class="sign_main">
+    <div class="log_main">
         <div class="container">
             <div class="row">
                 <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
                     <div class="card card-signin my-5">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Sign Up</h5>
-                            <form class="form-signin" name="signupform" method="POST" action="registration_confirmation.html">
+                            <h5 class="card-title text-center">Successfully Registered!</h5>
+                            <p style="margin-top: -8%;padding-bottom: 5%;text-align: center;">Check your mail for activation passcode</p>
+                            <form class="form-signin">
                                 <div class="form-label-group">
-                                    <input type="text" id="inputName" class="form-control" placeholder="Full Name" required autofocus onKeyup="checkform()">
-                                    <label for="inputName">Full Name</label>
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                                    <label for="inputEmail">Enter the Passcode</label>
                                 </div>
 
-                                <div class="form-label-group">
-                                    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus onKeyup="checkform()">
-                                    <label for="inputEmail">Email address</label>
-                                </div>
-
-                                <div class="form-label-group">
-                                    <input type="number" id="inputNumber" class="form-control" placeholder="Contact Number" required autofocus onKeyup="checkform()">
-                                    <label for="inputNumber">Contact Number</label>
-                                </div>
-
-                                <div class="form-label-group">
-                                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required onKeyup="checkform()">
-                                    <label for="inputPassword">Password</label>
-                                </div>
-
-                                <div class="form-label-group">
-                                    <input type="password" id="inputPassword1" class="form-control" placeholder="Password" required onKeyup="checkform()">
-                                    <label for="inputPassword1">Confirm Password</label>
-                                </div>
-                                <input id="submitbutton" class="btn btn-lg btn-block text-uppercase" onClick="location.href='registration_confirmation.html'" type="submit" style="background-color: #000; color: #fff;" disabled="disabled" value="Submit" />
-                                <p style="padding-top: 3%; text-align: right; margin-right: 2%;">Existing User? <span><a href="login.html">Log In</a></span></p>
+                                <button class="btn btn-lg btn-block text-uppercase" style="background-color: #000; color: #fff;" type="submit">Submit</button>
+                                <p style="padding-top: 3%; text-align: right; margin-right: 2%;">Didn't receive a mail? <span><a href="signup.html">Try Again</a></span></p>
                                 <hr class="my-4">
                             </form>
                         </div>
@@ -153,18 +135,5 @@
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-<script type="text/javascript" language="javascript">
-    function checkform() {
-        var f = document.forms["signupform"].elements;
-        var c = true;
-        for (var i = 0; i < f.length; i++) {
-            if (f[i].value.length == 0)
-                c = false;
-        }
-        if (c) {
-            document.getElementById('submitbutton').disabled = !c;
-        }
-    }
-</script>
 
 </html>
