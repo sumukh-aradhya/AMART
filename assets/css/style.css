@@ -306,6 +306,46 @@ h6 {
     font-size: 24px;
 }
 
+#admin_home {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/admin_back.jpg");
+    background-size: cover;
+}
+
+#admin_home .container {
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    #admin_home {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #admin_home {
+        height: auto;
+    }
+    #admin_home h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+#admin_home h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+#admin_home h1 span {
+    color: #c69962;
+}
+
 #temp_home {
     width: 100%;
     height: 45vh;
@@ -352,6 +392,44 @@ h6 {
     color: rgba(255, 255, 255, 0.9);
     margin: 10px 0 0 0;
     font-size: 24px;
+}
+
+#ad_home {
+    width: 100%;
+    height: 45vh;
+    background: url("../img/admin_back.jpg");
+    background-size: cover;
+}
+
+#ad_home .container {
+    padding-top: 74px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    #ad_home {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #ad_home {
+        height: auto;
+    }
+    #ad_home h1 {
+        font-size: 28px;
+    }
+}
+
+#ad_home h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+#ad_home h1 span {
+    color: #c69962;
 }
 
 section {
